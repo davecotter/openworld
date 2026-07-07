@@ -2,6 +2,8 @@
 
 Spatial Operating System MVP with **first-class Gaussian splat rendering on all platforms**.
 
+**Repository:** https://github.com/davecotter/openworld
+
 ## Policies
 
 - **Feature parity:** all platforms ship Gaussian splat viewing (see `.cursor/plans/platform-parity-matrix.md`)
