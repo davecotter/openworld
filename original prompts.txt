@@ -1,0 +1,37 @@
+original prompts:
+
+ Is there an open source 3-D modeling and rendering library that has an MCP that lets you design applications that can use video input from the cameras to make a 3-D model of the surroundings?
+
+ What’s the best library for the Vision Pro from Apple? on Quest 3 by Meta?
+
+  I want this app to run using the best kits on the hardware it runs on. And I want it to run on a variety of hardware. To start with I want an abstraction layer that will abstract Apple, open CV, and slam, and any other stack that comes as a unit, abstracted in a way similar to how Apple does it,  and provide the best of all of those as an abstraction layer so that the underlying model can be switched out depending on the hardware,  an approach could be to evaluate all available libraries and sort APIs by elegance and pick the best one and then write shims that sit between that API 
+
+  Does Xcode run on the vision? What IDE can I use on the Vision Pro to write an app on the Vision Pro using AI, and these open sources 3-D Libraries?
+
+  Is there an app on the App Store that lets me have enough access to spatial input and rendering to make the app I’m suggesting?
+
+  Actually, I want one set of code that runs across all the different VR systems that exist, they must be 10 or 15 full VR systems and 10 or 15 AR systems built into a glasses form that fits right above your nose, I want a library that’s going to run on all of them for display even if you have to use something like Vision Pro or some other method to input the data the playback can be a separate app from the sensor
+
+  There will be two apps in the ecosystem, one will be the one that senses the room, this will be the measuring app, and the rest of the apps will be running on all the devices that can get into the room and show a 3-D rendered version of the room in real time overlaid with the actual room, so that the user can no longer see what’s in the actual room, but only sees the renderEd graphics, fully immersive
+
+   Actually, it’s not two separate apps. It’s one app. The same app can both sense the room if the hardware is present and render the room to make reality disappear behind graphics, but keep the rooms aligned so if inside VR you see an object shaped like a bed and even maybe says the word “bed“ above it as a label you will know you can probably go over and feel it and kneel on it and get on top of it in the real world, but it will be visually as if you are in VR world, and any app, whether reality describer, definer, or the subscriber. In other words, all subscribers can update reality when better information is available. Like Wikipedia, or like the fleet of Teslas that I’ll learn from each each other with each successive update.
+
+   Mobile AR is a primary client of the 1.0, I considered part of MVP. users can use their phone to SLAM the room and then use the app to render the room in real time overlaid with the actual room, so that the user can no longer see what’s in the actual room, but only sees the renderEd graphics, fully immersive
+
+   When I say MVP, I mean minimum viable product, and that his prioritized by: vision pro  Meta quest, PS VR, steam VR, and whatever the current crop of most common and/or most promising VR headsets that are coming out, with an eye toward also running on all of the XR glasses that are also coming out. This is in addition to mobile AR, including iPads and iPhones and android phones and desktop preview two. For desktop and VR you will have the option of having an avatar where your camera is above their shoulder
+
+   For the shared server, I’d like it to be an appliance virtual machine that is trivial to spin up on any local computer or on the web, peer to peer like discord. Also, when you enter the space a local Bluetooth connection will be broadcast, along with automatic DNS discovery (bonjour/zeroconf) so that you very easily sign onto the local mesh just because you’re in the same room with the Bluetooth device that is broadcasting or on the same local network where DNSSD is running
+
+   The nodes can also connect into their own online mesh system with each other, and remote service discovery that each node also broadcast about all the other nodes that it knows about, so user could request a node remotely and view it, and even make updates to it, or just use their avatar to walk past the boundaries of their local node out into the world and into another mesh that is geographically do no wn the street
+
+   Each node is only allowed to connect with nodes that are geographically close to it, there is a certain cut off radius. You could come up with a geometry that would divvy up the Earth most efficiently. Note that the model must be modeled on top of a sphere because the Earth is shaped like a sphere and our coordinate system has to match using latitude and longitude.
+
+   Getting back down to room scale,the first idea will be scanning the rooms of your house and each room is a separate node. You will be allowed to start in a adjacent room that has not yet been scanned, therefore the model does not yet know where to place it. Relative to previously scanned rooms near the same location , you Can still scan the new room you’re in, and since the sensors can place you reasonably close, using GPS and other location services, you will see the other room rendered ghostlike, but it will probably be in the wrong place, but the moment you actually walk into that physical room that has already been scanned, the system will realize where the new room is relative to it, and will move it correctly into place and link your new room up with the existing mesh as a neighboring node
+
+   Also remember other connecting things can also be strongly modeled, similar to doorways: when you go outside streets and trees connect buildings, we can use open street map to geographically connect nodes and place them more precisely. We will also use iPhones which have the reasonably good GPS to pinpoint nodes, averaging all the GPS information from any device that provides it
+
+   Another thing we want to do is be able to switch to avatar mode where you watch over the shoulder or just step out of reality overlay, and you can zoom across town, visually or zoom into the space between the walls in your house and change the scale of your view so that you can model more and more precisely things that are small, but are physically there, as well as model things that are physically large like buildings and bridges. Open street map has a lot of very excellent data.
+
+   We only initially take from open street for our first guest. Once our models are more accurate than open street map, we go with our model.
+
+   Create a comprehensive specification markdown document. Use hierarchical section numbering for easy reference for example section one section 2 section 2.1 section 2.2 section 2.2.1 etc. Have the table of contents at the top be hyperlinked into each section. Include everything we have discussed in this entire context

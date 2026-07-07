@@ -1,0 +1,210 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 56;
+  objects = {
+
+/* Begin PBXBuildFile section */
+		66F527C0942843DB941B22F6 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A4B21C1274575BA25F5E9; };
+		C87D478FFDDA479C8B323D33 /* CaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C8C0507EA5455193EA7545; };
+		44CDBA2A077F41E396DECCFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD56806D3DE40D08EB1FD06; };
+		32526AC90B2340A9A88A0297 /* SplatEntityBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FE577B75E45A0B5C9FB81; };
+		AA5E41A891544CE589FACBF3 /* RoomImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592C73012CA84A1788E0DA8E; };
+		0AF07863ED654F44B4053692 /* SOSCoreBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FA2D8542B4FDFA89D4623; };
+		17D081CB67EC465CBBA6D9B4 /* SOSVisionProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D957F5FEE21C4B1186F7F975; };
+		0C8F91AFD47B4CE18602A1B0 /* SOSCoreBridge.h in Sources */ = {isa = PBXBuildFile; fileRef = 826EA4C9055642388248BF77; };
+		F01ECC0DFA4A4E47AA0F829B /* SOSCoreBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = E6399B630198408E94209294; };
+		8AE76E30DAA641D9B9EFC76E /* SOSVisionPro-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 7F42BB180DA5431FAA913B8E; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE67063DD010415989E9EED8 /* SOSVisionPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOSVisionPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22A4B21C1274575BA25F5E9 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppModel.swift"; sourceTree = "<group>"; };
+		C2C8C0507EA5455193EA7545 /* CaptureSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capture/CaptureSessionManager.swift"; sourceTree = "<group>"; };
+		7FD56806D3DE40D08EB1FD06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView.swift"; sourceTree = "<group>"; };
+		638FE577B75E45A0B5C9FB81 /* SplatEntityBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Render/SplatEntityBuilder.swift"; sourceTree = "<group>"; };
+		592C73012CA84A1788E0DA8E /* RoomImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoomImmersiveView.swift"; sourceTree = "<group>"; };
+		1E5FA2D8542B4FDFA89D4623 /* SOSCoreBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SOSCoreBridge.swift"; sourceTree = "<group>"; };
+		D957F5FEE21C4B1186F7F975 /* SOSVisionProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SOSVisionProApp.swift"; sourceTree = "<group>"; };
+		826EA4C9055642388248BF77 /* SOSCoreBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SOSCoreBridge.h"; sourceTree = "<group>"; };
+		E6399B630198408E94209294 /* SOSCoreBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "SOSCoreBridge.mm"; sourceTree = "<group>"; };
+		7F42BB180DA5431FAA913B8E /* SOSVisionPro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SOSVisionPro-Bridging-Header.h"; sourceTree = "<group>"; };
+		08692EEC91DB4FE0A3E755DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9B5FD8CC1634848961BF026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70E39541D9DA45C6BC4A9065 = {
+			isa = PBXGroup;
+			children = (
+				23AA9F9DBF3F4B05ADF83678 /* SOSVisionPro */,
+				9EE2508AB82E45139547B82D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EE2508AB82E45139547B82D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE67063DD010415989E9EED8 /* SOSVisionPro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23AA9F9DBF3F4B05ADF83678 /* SOSVisionPro */ = {
+			isa = PBXGroup;
+			children = (
+				F22A4B21C1274575BA25F5E9,
+				C2C8C0507EA5455193EA7545,
+				7FD56806D3DE40D08EB1FD06,
+				638FE577B75E45A0B5C9FB81,
+				592C73012CA84A1788E0DA8E,
+				1E5FA2D8542B4FDFA89D4623,
+				D957F5FEE21C4B1186F7F975,
+				826EA4C9055642388248BF77,
+				E6399B630198408E94209294,
+				7F42BB180DA5431FAA913B8E,
+				08692EEC91DB4FE0A3E755DE,
+			);
+			path = SOSVisionPro;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91D70C2DF09147319FF14B1E /* SOSVisionPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DDC6A89CF034F36B9CA6B8D;
+			buildPhases = (
+				FA7A673D627C4197962AC5B6 /* Sources */,
+				C9B5FD8CC1634848961BF026 /* Frameworks */,
+				290BDCA5FF644958AC6EA328 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOSVisionPro;
+			productName = SOSVisionPro;
+			productReference = DE67063DD010415989E9EED8;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33CCAB34BE5A49058E443E80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = { BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 1600; };
+			buildConfigurationList = 7DDC6A89CF034F36B9CA6B8D;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = 70E39541D9DA45C6BC4A9065;
+			productRefGroup = 9EE2508AB82E45139547B82D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91D70C2DF09147319FF14B1E /* SOSVisionPro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		290BDCA5FF644958AC6EA328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA7A673D627C4197962AC5B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F527C0942843DB941B22F6 /* AppModel.swift in Sources */,
+				C87D478FFDDA479C8B323D33 /* CaptureSessionManager.swift in Sources */,
+				44CDBA2A077F41E396DECCFA /* ContentView.swift in Sources */,
+				32526AC90B2340A9A88A0297 /* SplatEntityBuilder.swift in Sources */,
+				AA5E41A891544CE589FACBF3 /* RoomImmersiveView.swift in Sources */,
+				0AF07863ED654F44B4053692 /* SOSCoreBridge.swift in Sources */,
+				17D081CB67EC465CBBA6D9B4 /* SOSVisionProApp.swift in Sources */,
+				0C8F91AFD47B4CE18602A1B0 /* SOSCoreBridge.h in Sources */,
+				F01ECC0DFA4A4E47AA0F829B /* SOSCoreBridge.mm in Sources */,
+				8AE76E30DAA641D9B9EFC76E /* SOSVisionPro-Bridging-Header.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		903AAC4252D74F55A47BED75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = ("$(inherited)", "$(PROJECT_DIR)/../../core/include");
+				INFOPLIST_FILE = SOSVisionPro/Info.plist;
+				LIBRARY_SEARCH_PATHS = ("$(inherited)", "$(PROJECT_DIR)/../../build/xros-sim/core");
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = ("$(inherited)", "-lsos_core");
+				PRODUCT_BUNDLE_IDENTIFIER = com.openworld.sos.visionpro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SWIFT_OBJC_BRIDGING_HEADER = SOSVisionPro/SOSVisionPro-Bridging-Header.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A433CA1B299447AFB1982E79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = ("$(inherited)", "$(PROJECT_DIR)/../../core/include");
+				INFOPLIST_FILE = SOSVisionPro/Info.plist;
+				LIBRARY_SEARCH_PATHS = ("$(inherited)", "$(PROJECT_DIR)/../../build/xros/core");
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = ("$(inherited)", "-lsos_core");
+				PRODUCT_BUNDLE_IDENTIFIER = com.openworld.sos.visionpro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SWIFT_OBJC_BRIDGING_HEADER = SOSVisionPro/SOSVisionPro-Bridging-Header.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DDC6A89CF034F36B9CA6B8D /* Build configuration list */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				903AAC4252D74F55A47BED75 /* Debug */,
+				A433CA1B299447AFB1982E79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33CCAB34BE5A49058E443E80 /* Project object */;
+}

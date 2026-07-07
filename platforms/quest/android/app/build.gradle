@@ -1,0 +1,41 @@
+plugins {
+  id 'com.android.application'
+}
+
+android {
+  namespace 'com.openworld.sos.quest'
+  compileSdk 34
+
+  defaultConfig {
+    applicationId 'com.openworld.sos.quest'
+    minSdk 29
+    targetSdk 34
+    versionCode 1
+    versionName '0.1.0'
+    externalNativeBuild {
+      cmake {
+        cppFlags "-std=c++20"
+        arguments "-DANDROID_STL=c++_shared"
+      }
+    }
+    ndk {
+      abiFilters 'arm64-v8a'
+    }
+  }
+
+  externalNativeBuild {
+    cmake {
+      path file('src/main/cpp/CMakeLists.txt')
+    }
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+    }
+  }
+}
+
+dependencies {
+  // Meta XR Core SDK + OpenXR loader: add via local maven after SDK install (spec-12 §6.2)
+}

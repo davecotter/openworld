@@ -1,0 +1,52 @@
+---
+description: Quarterly discovery and rate-limited import of open Gaussian splat datasets
+globs:
+alwaysApply: false
+---
+
+# Gaussian Splat Source Discovery Policy
+
+## Quarterly search (4× per year)
+
+On the first Monday of January, April, July, and October, run:
+
+```bash
+./scripts/splat_sources_sync.sh --discover
+```
+
+Google query (exact): **"an open repository of gaussian splats from the world"**
+
+Also review:
+- GitHub topics: `gaussian-splatting`, `3dgs`, `nerf`, `splat`
+- Hugging Face datasets tagged gaussian splat / 3DGS
+- Academic mirrors with explicit open licenses
+
+## Import rules
+
+1. **Rate-limited** — default 1 request / 5 seconds; max 10 new assets per run unless `--force-batch` (maintainer only).
+2. **License gate** — only MIT, BSD, Apache-2.0, LGPL-compatible, CC0, CC-BY, public domain. Reject GPL/AGPL for mobile static-link targets.
+3. **Metadata first** — write `assets/splat_catalog/sources/<id>.json` before downloading blobs.
+4. **No server hammering** — honor `robots.txt`, use ETag/If-Modified-Since, resume partial downloads.
+5. **Slow rollout** — import at most 2 new public datasets per quarter into CI fixtures; expand catalog entries without bulk mirroring.
+
+## Catalog layout
+
+```text
+assets/splat_catalog/
+  README.md
+  sources/           # one JSON per discovered repo/dataset
+  imported/          # optional local copies (gitignored if large)
+  sync.log           # append-only import log
+```
+
+## Current known OSS references (seed list)
+
+| Source | License | Notes |
+|--------|---------|-------|
+| [antimatter15/splat](https://github.com/antimatter15/splat) | MIT | `.splat` binary format reference |
+| [scier/MetalSplatter](https://github.com/scier/MetalSplatter) | MIT | Metal splat renderer (Vision Pro fallback) |
+| [graphdeco-inria/gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) | Research/non-commercial check | PLY training output reference |
+| [PlayCanvas/supersplat](https://github.com/playcanvas/supersplat) | MIT | Editor + splat tooling |
+| Scaniverse export | User-owned export | Import via app, not scraped |
+
+Update this table each quarterly run in `assets/splat_catalog/sources/`.

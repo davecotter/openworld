@@ -1,0 +1,5 @@
+[2026-07-06T22:36:58-07:00] DISCOVER query="an open repository of gaussian splats from the world"
+[2026-07-06T22:36:58-07:00] DISCOVER seed sources in /Volumes/Developer/git/openworld/assets/splat_catalog/sources (manual Google/GitHub review each quarter)
+[2026-07-06T22:36:58-07:00] DISCOVER known playcanvas_supersplat.json
+[2026-07-06T22:36:58-07:00] DISCOVER known sample_antimatter15.json
+[2026-07-06T22:36:58-07:00] DISCOVER next: search "an open repository of gaussian splats from the world" and add JSON under sources/ with license field

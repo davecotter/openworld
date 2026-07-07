@@ -1,0 +1,12 @@
+{
+  "id": "sample_antimatter15",
+  "name": "antimatter15/splat (reference)",
+  "url": "https://github.com/antimatter15/splat",
+  "license": "MIT",
+  "format": ".splat binary",
+  "status": "seed",
+  "import_policy": "reference-only",
+  "notes": "Format reference for SOSSPLAT import; no bulk mirror. Use project-generated test splats for CI.",
+  "discovered_at": "2026-07-07",
+  "next_review": "2026-10-01"
+}

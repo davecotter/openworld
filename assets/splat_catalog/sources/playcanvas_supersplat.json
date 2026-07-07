@@ -1,0 +1,11 @@
+{
+  "id": "playcanvas_supersplat",
+  "name": "PlayCanvas SuperSplat",
+  "url": "https://github.com/playcanvas/supersplat",
+  "license": "MIT",
+  "format": "PLY / splat editor export",
+  "status": "cataloged",
+  "import_policy": "metadata-only",
+  "discovered_at": "2026-07-07",
+  "next_review": "2026-10-01"
+}

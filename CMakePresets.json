@@ -1,0 +1,118 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 24,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "qt-host-debug",
+      "displayName": "Host Debug (Qt Creator / macOS)",
+      "description": "Build sos-core on macOS using bundled Qt CMake + Ninja",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/host",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_PREFIX_PATH": "/Users/davec/Developer/Qt/6.11.1/macos",
+        "SOS_BUILD_TESTS": "ON"
+      },
+      "environment": {
+        "PATH": "/Users/davec/Developer/Qt/Tools/CMake/CMake.app/Contents/bin:/Users/davec/Developer/Qt/Tools/Ninja:$penv{PATH}"
+      }
+    },
+    {
+      "name": "qt-host-release",
+      "inherits": "qt-host-debug",
+      "displayName": "Host Release (Qt Creator / macOS)",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "xros-debug",
+      "displayName": "visionOS Device Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/xros",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_SYSTEM_NAME": "visionOS",
+        "CMAKE_OSX_SYSROOT": "xros",
+        "CMAKE_OSX_ARCHITECTURES": "arm64",
+        "CMAKE_OSX_DEPLOYMENT_TARGET": "2.0",
+        "SOS_BUILD_TESTS": "OFF"
+      },
+      "environment": {
+        "PATH": "/Users/davec/Developer/Qt/Tools/CMake/CMake.app/Contents/bin:/Users/davec/Developer/Qt/Tools/Ninja:$penv{PATH}",
+        "DEVELOPER_DIR": "/Applications/Xcode-27.0.0-Beta.2.app/Contents/Developer"
+      }
+    },
+    {
+      "name": "xros-simulator-debug",
+      "displayName": "visionOS Simulator Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/xros-sim",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_SYSTEM_NAME": "visionOS",
+        "CMAKE_OSX_SYSROOT": "xrsimulator",
+        "CMAKE_OSX_ARCHITECTURES": "arm64",
+        "CMAKE_OSX_DEPLOYMENT_TARGET": "2.0",
+        "SOS_BUILD_TESTS": "OFF"
+      },
+      "environment": {
+        "PATH": "/Users/davec/Developer/Qt/Tools/CMake/CMake.app/Contents/bin:/Users/davec/Developer/Qt/Tools/Ninja:$penv{PATH}",
+        "DEVELOPER_DIR": "/Applications/Xcode-27.0.0-Beta.2.app/Contents/Developer"
+      }
+    },
+    {
+      "name": "ios-debug",
+      "displayName": "iOS Device Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/ios",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_SYSTEM_NAME": "iOS",
+        "CMAKE_OSX_SYSROOT": "iphoneos",
+        "CMAKE_OSX_ARCHITECTURES": "arm64",
+        "CMAKE_OSX_DEPLOYMENT_TARGET": "17.0",
+        "SOS_BUILD_TESTS": "OFF"
+      },
+      "environment": {
+        "PATH": "/Users/davec/Developer/Qt/Tools/CMake/CMake.app/Contents/bin:/Users/davec/Developer/Qt/Tools/Ninja:$penv{PATH}",
+        "DEVELOPER_DIR": "/Applications/Xcode-27.0.0-Beta.2.app/Contents/Developer"
+      }
+    },
+    {
+      "name": "quest-debug",
+      "displayName": "Quest Android arm64 Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/quest",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_TOOLCHAIN_FILE": "$env{ANDROID_NDK}/build/cmake/android.toolchain.cmake",
+        "ANDROID_ABI": "arm64-v8a",
+        "ANDROID_PLATFORM": "android-29",
+        "SOS_BUILD_TESTS": "OFF"
+      },
+      "environment": {
+        "PATH": "/Users/davec/Developer/Qt/Tools/CMake/CMake.app/Contents/bin:/Users/davec/Developer/Qt/Tools/Ninja:$penv{PATH}"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "qt-host-debug", "configurePreset": "qt-host-debug" },
+    { "name": "qt-host-release", "configurePreset": "qt-host-release" },
+    { "name": "xros-debug", "configurePreset": "xros-debug" },
+    { "name": "xros-simulator-debug", "configurePreset": "xros-simulator-debug" },
+    { "name": "ios-debug", "configurePreset": "ios-debug" },
+    { "name": "quest-debug", "configurePreset": "quest-debug" }
+  ],
+  "testPresets": [
+    {
+      "name": "qt-host-debug",
+      "configurePreset": "qt-host-debug",
+      "output": { "outputOnFailure": true }
+    }
+  ]
+}
